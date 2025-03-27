@@ -1,0 +1,46 @@
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping to next row */
+    gap: 20px;
+    /* Adds space between items */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    /* Align icon and text */
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    /* Space between icon and name */
+}
+
+.proficiency {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.proficiency.beginner {
+    color: #ff4d4d;
+    /* Red for Beginner */
+}
+
+.proficiency.intermediate {
+    color: #ffb84d;
+    /* Yellow for Intermediate */
+}
+
+.proficiency.advanced {
+    color: #4dff88;
+    /* Green for Advanced */
+}

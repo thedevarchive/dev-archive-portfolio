@@ -70,6 +70,12 @@ a {
   color: white;
 }
 
+h1,
+h2,
+h3 {
+    color: white;
+}
+
 .experience-education-container {
   display: flex;
   justify-content: space-between;
@@ -78,7 +84,7 @@ a {
 }
 
 .experience-box,
-.education-box {
+.education-box, .skill-category {
   flex: 1;
   padding: 20px;
   background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
