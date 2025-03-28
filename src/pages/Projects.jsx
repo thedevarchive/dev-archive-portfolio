@@ -1,11 +1,50 @@
+import { FaGithub } from "react-icons/fa";
+
+import "../Projects.css";
+
 export function Projects() {
+    const projects = [
+        {
+            title: "Personal Portfolio",
+            description: "You're looking at it right now. Contains information about the dev's projects, experience and skillset. Website uses the style of glassmorphism for a modern look and feel.",
+            image: "/images/portfolio.jpeg",
+            github: "https://github.com/thedevarchive/dev-archive-portfolio",
+            tech: ["JavaScript", "React", "Tailwind"]
+        },
+        {
+            title: "Code Snippet Manager",
+            description: "A web app to store and organise code snippets.",
+            image: "/images/code-snippet.jpeg",
+            github: "https://github.com/thedevarchive/code-snippet-manager",
+            tech: ["JavaScript", "React", "Material UI"]
+        },
+
+        
+    ];
+
     return (
-      <div className="home-container">
-        <div className="glass-card">
-          <h1>Welcome to My Portfolio</h1>
-          <p>I'm a Full Stack Developer passionate about building innovative applications.</p>
-          <a href="/projects" className="cta-button">View My Work</a>
+        <div className="home-container">
+            <div className="glass-card">
+                <h1>Projects</h1>
+                <div className="projects-grid">
+                    {projects.map((project, index) => (
+                        <div key={index} className="project-card">
+                            <img src={project.image} alt={project.title} className="project-image" />
+                            <h2>{project.title}</h2>
+                            <p>{project.description}</p>
+                            <div className="tech-stack">
+                                {project.tech.map((tech, i) => (
+                                    <span key={i} className="tech-tag">{tech}</span>
+                                ))}
+                            </div>
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
+                                <FaGithub size={20} /> View on GitHub
+                            </a>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
         </div>
-      </div>
     );
-  }
+}

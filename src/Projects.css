@@ -1,0 +1,47 @@
+.projects-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Glassmorphism Effect */
+  }
+  
+  .project-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .tech-stack {
+    margin: 1rem 0;
+  }
+  
+  .tech-tag {
+    background: #282c34;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    margin-right: 5px;
+  }
+  
+  .github-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  

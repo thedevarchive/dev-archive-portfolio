@@ -71,7 +71,7 @@ const skills = [
 
 export function Skills() {
     return (
-        <div className="home-container">
+        <div className="outer-skill-container">
             <div className="glass-card">
                 <h2>My Skills</h2>
                 <h3 className="subtitle">
