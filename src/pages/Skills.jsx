@@ -1,5 +1,5 @@
 import React from "react";
-import { FaJs, FaJava, FaReact, FaNodeJs, FaCogs } from "react-icons/fa"; // Import icons
+import { FaBitbucket, FaGitAlt, FaGithub, FaJs, FaJava, FaReact, FaNodeJs, FaCogs } from "react-icons/fa"; // Import icons
 import { SiPython } from "react-icons/si"; // Additional icons from react-icons
 import { TbBrandCSharp, TbLayersIntersect } from "react-icons/tb";
 import { RiRestTimeLine } from "react-icons/ri";
@@ -8,6 +8,7 @@ import { FcFlowChart } from "react-icons/fc";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { DiVisualstudio } from "react-icons/di";
 import { SiEclipseide } from "react-icons/si";
+import { VscAzureDevops } from "react-icons/vsc";
 
 import "../Skills.css"; 
 
@@ -32,7 +33,7 @@ const skills = [
     {
         category: "IDEs",
         items: [
-            { name: "Visual Studio Code", proficiency: "intermediate", icon: <BiLogoVisualStudio />},
+            { name: "VS Code", proficiency: "intermediate", icon: <BiLogoVisualStudio />},
             { name: "Visual Studio", proficiency: "intermediate", icon: <DiVisualstudio /> },
             { name: "Eclipse", proficiency: "intermediate", icon: <SiEclipseide /> }, 
             { name: "Netbeans", proficiency: "beginner", icon: <TbLayersIntersect /> }, 
@@ -50,10 +51,10 @@ const skills = [
     {
         category: "Version Control",
         items: [
-            { name: "RESTful API", proficiency: "intermediate", icon: <RiRestTimeLine /> },
-            { name: "OOP", proficiency: "advanced", icon: <MdDataObject /> },
-            { name: "Algorithms", proficiency: "intermediate", icon: <FcFlowChart /> }, 
-            { name: "Design Patterns", proficiency: "beginner", icon: <TbLayersIntersect /> }, 
+            { name: "GitHub", proficiency: "intermediate", icon: <FaGithub /> },
+            { name: "Git", proficiency: "beginner", icon: <FaGitAlt /> },
+            { name: "Bitbucket", proficiency: "beginner", icon: <FaBitbucket />}, 
+            { name: "Azure DevOps", proficiency: "advanced", icon: <VscAzureDevops /> }, 
         ],
     },
     {
