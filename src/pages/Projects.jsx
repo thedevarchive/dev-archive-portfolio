@@ -14,7 +14,7 @@ export function Projects() {
         {
             title: "Code Snippet Manager",
             description: "A web app to store and organise code snippets.",
-            image: "/images/code-snippet.jpeg",
+            image: "/images/code-snippet.png",
             github: "https://github.com/thedevarchive/code-snippet-manager",
             tech: ["JavaScript", "React", "Material UI"]
         },
