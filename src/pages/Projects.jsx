@@ -6,8 +6,8 @@ export function Projects() {
     const projects = [
         {
             title: "Personal Portfolio",
-            description: "You're looking at it right now. Contains information about the dev's projects, experience and skillset. Website uses the style of glassmorphism for a modern look and feel.",
-            image: "/images/portfolio.jpeg",
+            description: "You are here. Contains information about the dev's projects, experience and skillset. Website uses the style of glassmorphism for a modern look and feel.",
+            image: "/images/portfolio.png",
             github: "https://github.com/thedevarchive/dev-archive-portfolio",
             tech: ["JavaScript", "React", "Tailwind"]
         },
@@ -18,12 +18,19 @@ export function Projects() {
             github: "https://github.com/thedevarchive/code-snippet-manager",
             tech: ["JavaScript", "React", "Material UI"]
         },
+        {
+            title: "Image Watermark Editor",
+            description: "A web app for adding watermarks to images.",
+            image: "/images/image-watermark.jpeg",
+            github: "https://github.com/thedevarchive/image-watermark-editor",
+            tech: ["JavaScript", "React"]
+        },
 
         
     ];
 
     return (
-        <div className="home-container">
+        <div className="projects-container">
             <div className="glass-card">
                 <h1>Projects</h1>
                 <div className="projects-grid">

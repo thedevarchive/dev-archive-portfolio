@@ -1,13 +1,12 @@
 import React from "react";
 import { FaBitbucket, FaGitAlt, FaGithub, FaJs, FaJava, FaReact, FaNodeJs, FaCogs } from "react-icons/fa"; // Import icons
-import { SiMysql, SiOracle, SiPython, SiSqlite } from "react-icons/si"; // Additional icons from react-icons
+import { SiEclipseide, SiMysql, SiOracle, SiPython, SiSqlite } from "react-icons/si"; // Additional icons from react-icons
 import { TbBrandCSharp, TbLayersIntersect } from "react-icons/tb";
-import { RiRestTimeLine } from "react-icons/ri";
+import { RiCursorLine, RiRestTimeLine } from "react-icons/ri";
 import { MdDataObject } from "react-icons/md";
 import { FcFlowChart } from "react-icons/fc";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { DiMsqlServer, DiVisualstudio } from "react-icons/di";
-import { SiEclipseide } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
 import "../Skills.css";
@@ -37,6 +36,7 @@ const skills = [
             { name: "Visual Studio", proficiency: "intermediate", icon: <DiVisualstudio /> },
             { name: "Eclipse", proficiency: "intermediate", icon: <SiEclipseide /> },
             { name: "Netbeans", proficiency: "beginner", icon: <TbLayersIntersect /> },
+            { name: "Cursor IDE", proficiency: "beginner", icon: <RiCursorLine /> },
         ],
     },
     {
@@ -64,7 +64,7 @@ const skills = [
             { name: "RESTful API", proficiency: "intermediate", icon: <RiRestTimeLine /> },
             { name: "OOP", proficiency: "advanced", icon: <MdDataObject /> },
             { name: "Algorithms", proficiency: "intermediate", icon: <FcFlowChart /> },
-            { name: "Design Patterns", proficiency: "beginner", icon: <TbLayersIntersect /> },
+            { name: "Design Patterns", proficiency: "intermediate", icon: <TbLayersIntersect /> },
         ],
     },
 ];
