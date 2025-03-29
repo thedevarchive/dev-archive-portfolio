@@ -30,7 +30,7 @@ export function Projects() {
             description: "A test that allows users to identify the best IT career for them based on their personality.",
             image: "/images/dev-career.png",
             github: "https://github.com/thedevarchive/dev-career-personality-test",
-            tech: ["JavaScript", "React"]
+            tech: ["JavaScript", "React", "Reactstrap"]
         },
         {
             title: "DCPT Server",
@@ -38,6 +38,13 @@ export function Projects() {
             image: "/images/server.png",
             github: "https://github.com/thedevarchive/dcpt-server",
             tech: ["Node.js", "Express", "MySQL"]
+        },
+        {
+            title: "Guess the Capital",
+            description: "A game where users guess the capital of a country. The list of countries and capitals are scraped from a website.",
+            image: "/images/capital-scraper.jpg",
+            github: "https://github.com/thedevarchive/guess-capital-scraper",
+            tech: ["Python", "Beautiful Soup"]
         },
 
         
