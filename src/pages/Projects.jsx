@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLock } from "react-icons/fa";
 
 import "../Projects.css";
 
@@ -46,6 +46,13 @@ export function Projects() {
             github: "https://github.com/thedevarchive/guess-capital-scraper",
             tech: ["Python", "Beautiful Soup"]
         },
+        {
+            title: "Mighty Mug Store",
+            description: "Online e-commerce store that sells different types of mugs. Complete with filter options, shopping cart system and order form to fill after checkout.",
+            image: "/images/mighty-mug.png",
+            github: "none",
+            tech: ["Python", "Flask", "HTML"]
+        },
 
         
     ];
@@ -65,9 +72,17 @@ export function Projects() {
                                     <span key={i} className="tech-tag">{tech}</span>
                                 ))}
                             </div>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-link">
-                                <FaGithub size={20} /> View on GitHub
-                            </a>
+                            {
+                                project.github === "none" ? (
+                                    <a className="cta-button github-link">
+                                        <FaLock size={20} /> Request GitHub Access
+                                    </a>
+                                ) : (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
+                                        <FaGithub size={20} /> View on GitHub
+                                    </a>
+                                )
+                            }
                         </div>
                     ))}
                 </div>
