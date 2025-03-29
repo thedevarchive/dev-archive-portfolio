@@ -21,9 +21,23 @@ export function Projects() {
         {
             title: "Image Watermark Editor",
             description: "A web app for adding watermarks to images.",
-            image: "/images/image-watermark.jpeg",
+            image: "/images/image-watermark.png",
             github: "https://github.com/thedevarchive/image-watermark-editor",
             tech: ["JavaScript", "React"]
+        },
+        {
+            title: "Dev Career Personality Test",
+            description: "A test that allows users to identify the best IT career for them based on their personality.",
+            image: "/images/dev-career.png",
+            github: "https://github.com/thedevarchive/dev-career-personality-test",
+            tech: ["JavaScript", "React"]
+        },
+        {
+            title: "DCPT Server",
+            description: "Backend required to be downloaded with the Dev Career Personality Test project. Contains the web application's APIs and the database containing the possible results and information of the possible IT career results.",
+            image: "/images/server.png",
+            github: "https://github.com/thedevarchive/dcpt-server",
+            tech: ["Node.js", "Express", "MySQL"]
         },
 
         
