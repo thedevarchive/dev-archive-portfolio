@@ -1,0 +1,56 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .contact-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+  .copy-icon {
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .copied-msg {
+    font-size: 0.9rem;
+    color: #28a745;
+  }
+  

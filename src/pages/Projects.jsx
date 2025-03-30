@@ -7,7 +7,7 @@ export function Projects() {
     return (
         <div className="projects-container">
             <div className="glass-card">
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
                         <div key={index} className="project-card">
