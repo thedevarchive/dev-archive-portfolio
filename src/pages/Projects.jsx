@@ -1,6 +1,5 @@
 import { FaExternalLinkAlt, FaGithub, FaLock } from "react-icons/fa";
 
-
 import "../Projects.css";
 
 export function Projects() {
@@ -104,14 +103,14 @@ export function Projects() {
                                         <FaGithub size={20} /> View on GitHub
                                     </a>
                                 ) : (
-                                    <a href="/" onClick={(e) => e.preventDefault()} className="cta-button github-link">
+                                    <a href="/" onClick={(e) => e.preventDefault()} className="disabled-btn disabled-link">
                                         <FaLock size={20} /> Request GitHub Access
                                     </a>
                                 )
                             }
                             {
                                 project.link && (
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="secondary-btn website-link">
                                         <FaExternalLinkAlt size={20} /> View Website
                                     </a>
                                 )
