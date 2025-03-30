@@ -1,4 +1,5 @@
-import { FaGithub, FaLock } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaLock } from "react-icons/fa";
+
 
 import "../Projects.css";
 
@@ -16,14 +17,16 @@ export function Projects() {
             description: "A web app to store and organise code snippets.",
             image: "/images/code-snippet.png",
             github: "https://github.com/thedevarchive/code-snippet-manager",
-            tech: ["JavaScript", "React", "Material UI"]
+            tech: ["JavaScript", "React", "Material UI"], 
+            link: "https://tda-code-snippets.netlify.app/"
         },
         {
             title: "Image Watermark Editor",
             description: "A web app for adding watermarks to images.",
             image: "/images/image-watermark.png",
             github: "https://github.com/thedevarchive/image-watermark-editor",
-            tech: ["JavaScript", "React"]
+            tech: ["JavaScript", "React"], 
+            link: "https://tda-image-watermarker.netlify.app/"
         },
         {
             title: "Dev Career Personality Test",
@@ -43,14 +46,12 @@ export function Projects() {
             title: "Tick-a-Task",
             description: "A mobile app that allows users to be productive by using ",
             image: "/images/tick-a-task.jpg",
-            github: "/",
             tech: ["React Native", "Expo", "JavaScript"]
         },
         {
             title: "Tick-a-Task Server",
             description: "Backend required to be downloaded with the Tick-a-Task project. Contains the APIs and the database file to allow app to run.",
             image: "/images/server.png",
-            github: "/",
             tech: ["Node.js", "Express", "MySQL"]
         },
         {
@@ -64,7 +65,6 @@ export function Projects() {
             title: "Mighty Mug Store",
             description: "Online e-commerce store that sells different types of mugs. Complete with filter options, shopping cart system and order form to fill after checkout.",
             image: "/images/mighty-mug.png",
-            github: "/",
             tech: ["Python", "Flask", "HTML"]
         },
         {
@@ -99,13 +99,20 @@ export function Projects() {
                                 ))}
                             </div>
                             {
-                                project.github === "/" ? (
+                                project.github ? (
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
+                                        <FaGithub size={20} /> View on GitHub
+                                    </a>
+                                ) : (
                                     <a href="/" onClick={(e) => e.preventDefault()} className="cta-button github-link">
                                         <FaLock size={20} /> Request GitHub Access
                                     </a>
-                                ) : (
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
-                                        <FaGithub size={20} /> View on GitHub
+                                )
+                            }
+                            {
+                                project.link && (
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
+                                        <FaExternalLinkAlt size={20} /> View Website
                                     </a>
                                 )
                             }
