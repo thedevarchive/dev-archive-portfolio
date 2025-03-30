@@ -40,6 +40,20 @@ export function Projects() {
             tech: ["Node.js", "Express", "MySQL"]
         },
         {
+            title: "Tick-a-Task",
+            description: "A mobile app that allows users to be productive by using ",
+            image: "/images/tick-a-task.jpg",
+            github: "/",
+            tech: ["React Native", "Expo", "JavaScript"]
+        },
+        {
+            title: "Tick-a-Task Server",
+            description: "Backend required to be downloaded with the Tick-a-Task project. Contains the APIs and the database file to allow app to run.",
+            image: "/images/server.png",
+            github: "/",
+            tech: ["Node.js", "Express", "MySQL"]
+        },
+        {
             title: "Guess the Capital",
             description: "A game where users guess the capital of a country. The list of countries and capitals are scraped from a website.",
             image: "/images/capital-scraper.jpg",
@@ -50,11 +64,23 @@ export function Projects() {
             title: "Mighty Mug Store",
             description: "Online e-commerce store that sells different types of mugs. Complete with filter options, shopping cart system and order form to fill after checkout.",
             image: "/images/mighty-mug.png",
-            github: "none",
+            github: "/",
             tech: ["Python", "Flask", "HTML"]
         },
-
-        
+        {
+            title: "High or Low Dice Game",
+            description: "A game where players can bet money to guess the value of the dice correctly. Contains gambling with virtual money.",
+            image: "/images/dice-game.png",
+            github: "https://github.com/thedevarchive/high-or-low-dice",
+            tech: ["Java", "Java GUI", "Swing"]
+        },
+        {
+            title: "Game Night Buzzer",
+            description: "A buzzer created for Game Nights held at certain occasions, mainly in reunions and holidays.",
+            image: "/images/buzzer.jpg",
+            github: "https://github.com/thedevarchive/gameshow-buzzer",
+            tech: ["Java", "Java GUI", "Swing"]
+        }
     ];
 
     return (
@@ -73,8 +99,8 @@ export function Projects() {
                                 ))}
                             </div>
                             {
-                                project.github === "none" ? (
-                                    <a className="cta-button github-link">
+                                project.github === "/" ? (
+                                    <a href="/" onClick={(e) => e.preventDefault()} className="cta-button github-link">
                                         <FaLock size={20} /> Request GitHub Access
                                     </a>
                                 ) : (

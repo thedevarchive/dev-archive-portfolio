@@ -28,7 +28,10 @@
 
 .project-image {
   width: 100%;
+  min-height: 100px;
+  max-height: 170px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .tech-stack {
