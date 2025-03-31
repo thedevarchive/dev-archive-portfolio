@@ -1,7 +1,7 @@
 import { FaExternalLinkAlt, FaGithub, FaLock } from "react-icons/fa";
 
 import projects from "../utils/projectsData"; 
-import "../Projects.css";
+import "../styles/Projects.css";
 
 // Project page 
 // List some of my favourite projects

@@ -10,7 +10,7 @@ import { DiMsqlServer, DiVisualstudio } from "react-icons/di";
 import { VscAzureDevops } from "react-icons/vsc";
 
 import skills from "../utils/skillsData";
-import "../Skills.css";
+import "../styles/Skills.css";
 
 export function Skills() {
     const iconMap = { FaBitbucket, FaGitAlt, FaGithub, FaJs, FaJava, FaReact, FaNodeJs, FaCogs, SiEclipseide, SiMysql, SiNotepadplusplus, SiOracle, SiPython, SiSqlite, TbBrandCSharp, TbLayersIntersect, RiCursorLine, RiRestTimeLine, MdDataObject, FcFlowChart, BiLogoVisualStudio, DiMsqlServer, DiVisualstudio, VscAzureDevops };

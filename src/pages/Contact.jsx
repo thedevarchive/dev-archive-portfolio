@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaCopy } from "react-icons/fa";
-import "../Contact.css";
+import "../styles/Contact.css";
 
 export function Contact() {
   const [copied, setCopied] = useState(false);
