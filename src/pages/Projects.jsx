@@ -10,7 +10,7 @@ import "../styles/Projects.css";
 export function Projects() {
     return (
         <div className="projects-container">
-            <div className="glass-card">
+            <div className="project-glass-card">
                 <h2>Projects</h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (

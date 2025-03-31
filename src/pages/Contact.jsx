@@ -18,7 +18,7 @@ export function Contact() {
     <div className="home-container">
       <div className="contact-glass-card">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out through any of the following:</p>
+        <p>Feel free to reach out to me</p>
 
         <div className="contact-methods">
           <div className="contact-item" onClick={handleCopy}>

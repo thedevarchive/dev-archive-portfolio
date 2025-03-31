@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -59,18 +59,6 @@ body {
 
 .secondary-button:hover {
   background: #6B8FE1;
-}
-
-.disabled-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #D1A7FF;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: default; 
 }
 
 .navbar {
@@ -127,6 +115,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
+  .navbar > ul {
+    margin-left: 38px;
+  }
+
   .experience-education-container {
     flex-direction: column;
   }

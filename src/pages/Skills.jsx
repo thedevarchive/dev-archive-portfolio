@@ -21,18 +21,28 @@ export function Skills() {
                 <h2>My Skills</h2>
                 <h3 className="subtitle">
                     <p>
-                        <span className={`proficiency beginner`}>
-                            ●
-                        </span>
-                        &nbsp; Familiar &emsp;
-                        <span className={`proficiency intermediate`}>
-                            ●
-                        </span>
-                        &nbsp; Proficient &emsp;
-                        <span className={`proficiency advanced`}>
-                            ●
-                        </span>
-                        &nbsp; Advanced
+                        <div className="legend-container">
+                            <div className="legend-box">
+                                <span className={`proficiency beginner`}>
+                                    ●
+                                </span>
+                                Familiar
+                            </div>
+                            <div className="legend-box">
+                                <span className={`proficiency intermediate`}>
+                                    ●
+                                </span>
+                                Proficient
+                            </div>
+
+                            <div className="legend-box">
+                                <span className={`proficiency advanced`}>
+                                    ●
+                                </span>
+                                Advanced
+
+                            </div>
+                        </div>
                     </p>
                 </h3>
                 <div className="skill-container">

@@ -16,6 +16,18 @@
   justify-content: center;
 }
 
+.project-glass-card {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 50%;
+}
+
 .project-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -55,15 +67,6 @@
   font-weight: bold;
 }
 
-.disabled-link {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
 .website-link {
   display: flex;
   align-items: center;
@@ -71,4 +74,19 @@
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .project-glass-card {
+    margin-right: 10px;
+    width: 70%;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-left: -20px;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
 }
