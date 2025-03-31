@@ -10,7 +10,11 @@ export function Home() {
                     A Full Stack Developer building scalable web apps,
                     optimising software solutions and bridging the gap between development and IT operations.
                 </p>
-                <a href="/projects" className="cta-button">View My Work</a>
+                <a href="/resume.pdf" download className="btn secondary">
+                    Download Resume
+                </a>
+                <a href="/projects" className="btn primary">View My Work</a>
+                <a href="/contact" className="btn primary">Contact Me</a>
             </div>
         </div>
     );

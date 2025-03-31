@@ -26,18 +26,18 @@ export function Projects() {
                             {
                                 /* If repo is private, "disable" link and let viewer know to request access */ 
                                 project.github ? (
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="cta-button github-link">
+                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn primary github-link">
                                         <FaGithub size={20} /> View on GitHub
                                     </a>
                                 ) : (
-                                    <a href="/contact" className="cta-button github-link">
+                                    <a href="/contact" className="btn primary github-link">
                                         <FaLock size={20} /> Request GitHub Access
                                     </a>
                                 )
                             }
                             {
                                 project.link && (
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="secondary-btn website-link">
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn secondary website-link">
                                         <FaExternalLinkAlt size={20} /> View Website
                                     </a>
                                 )
