@@ -1,4 +1,6 @@
 export function Home() {
+    // Home page
+    // TODO: add resume download and contact button 
     return (
         <div className="home-container">
             <div className="glass-card">

@@ -1,4 +1,7 @@
 export function About() {
+    // About page 
+    // Contains some information about experience and education
+    // Complete details are in resume 
     return (
         <div className="home-container">
             <div className="glass-card">
