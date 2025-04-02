@@ -17,6 +17,8 @@ to install its dependencies, then type
 
 to run the project. 
 
+Alternatively, you can view the portfolio [here](tda-portfolio.netlify.app). [![Netlify Status](https://api.netlify.com/api/v1/badges/9b2fa979-ebdd-4cb7-81c5-d559ba406ecd/deploy-status)](https://app.netlify.com/sites/tda-portfolio/deploys)
+
 # How to Use
 
 Use the links in the navigation bar at the top of the portfolio page to navigate through the website. 
