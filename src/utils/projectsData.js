@@ -4,7 +4,8 @@ const projects = [
         description: "You are here. Contains information about the dev's projects, experience and skillset. Website uses the style of glassmorphism for a modern look and feel.",
         image: "/images/portfolio.png",
         github: "https://github.com/thedevarchive/dev-archive-portfolio",
-        tech: ["JavaScript", "React", "Tailwind"]
+        tech: ["JavaScript", "React", "Tailwind"], 
+        link: "https://tda-portfolio.netlify.app/"
     },
     {
         title: "Code Snippet Manager",
