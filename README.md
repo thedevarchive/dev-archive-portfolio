@@ -31,7 +31,7 @@ __NOTE:__ Projects with private repositories have a Request GitHub Access button
 
 # Features
 
-* Navigation bar featuring five pages
+* Navigation bar containing links to five pages 
 * Home page containing a summary of what I do, some buttons leading to other pages and a button that downloads a PDF of my resume when clicked
 * About page containing more information about me, as well as some details on my experience and education
 * Skills page containing my proficiencies in languages, frameworks, tools and more
